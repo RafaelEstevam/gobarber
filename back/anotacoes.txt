@@ -1,0 +1,19 @@
+Criação de migration no yarm
+
+TypeORM
+yarn add reflect-metadata - Instalação de dependência reflect-metadata
+
+Migrations - Versionamento do banco de dados
+yarn typeorm migration:create -n NomeDaClasseRelacionadaATabela - Tabela que será criada dentro do banco de dados.
+yarn typeorm migration:run - vai criar a estrutura do banco de dados de acordo com a migration configurada.
+yarn typeorm migration:revert - desfaz a migration.
+
+Typescript
+No tsconfig.json
+Habilitar o uso de decorators:
+    -Descomentar : "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
+    -Descomentar : "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
+    -Descomentar : "strictPropertyInitialization": false,         /* Enable strict checking of property initialization in classes. */
+    
+
+

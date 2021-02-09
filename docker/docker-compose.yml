@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+    gostack_postgres:
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_DB: pgdb
+            POSTGRES_USER: pguser
+            POSTGRES_PASSWORD: pgpass
+        ports: 
+            - 5433:5432
